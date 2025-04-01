@@ -41,7 +41,7 @@ function getStart(str, start){
  */
 function lire(nbr) {
     if(nbr === "-") return ""
-    if(nbr.toString()[0] === "-") return "mois " + lire(getStart(nbr.toString(), 1))
+    if(nbr.toString()[0] === "-") return "moins " + lire(getStart(nbr.toString(), 1))
     if(nbr === 0) return "zero"
     if(nbr.toString()[0] === "0") return lire(getStart(nbr.toString(), 1))
     if(nbr < 10) return unite[nbr]
