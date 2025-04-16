@@ -1,12 +1,10 @@
-
-
 fieldset {
-    width: calc(250px + (30px * 2));
+    width: 350px;
     display: flex;
     flex-direction: column;
     gap: 6px;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 20px;
     border: var(--border);
     box-shadow: var(--shadow-xxxl), inset var(--shadow-xl);
 }
@@ -40,6 +38,7 @@ fieldset {
     cursor: pointer;
     transition: var(--t);
 }
+
 .input_buttons button:active {
     transform: translateY(5px);
 }
@@ -47,7 +46,7 @@ fieldset {
 .item_form label {
     position: absolute;
     left: 12px;
-    top: calc(100% / 2 - (var(--label-size-default) / 2));
+    top: calc(100% / 2 - (var(--label-size-default) / 2) - 1px);
     text-transform: capitalize;
     transition: var(--t);
 }
@@ -62,7 +61,8 @@ fieldset {
     appearance: textfield;
 }
 
-.item_form:has(input:focus, input.active) label {
+.item_form:has(input:focus) label,
+.item_form:has(input:not(:placeholder-shown)) label {
     opacity: 0.8;
     font-size: 83%;
     top: 5px;
@@ -108,4 +108,41 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+
+
+
+@media all and (max-width: 500px) {
+    body {
+        background: linear-gradient(
+            to bottom,
+            #ddd 0%,
+            #fff 100%
+        );
+    }
+    fieldset {
+        border-radius: 0px;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        gap: 20px;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    .item_form {
+        width: 100%;
+        max-width: 100%;
+        height: var(--height-input);
+    }
+    .item_form input {
+        height: 100%;
+    }
 }
