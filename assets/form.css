@@ -121,6 +121,15 @@ fieldset {
     background: var(--second-bg);
 }
 
+
+
+/* Supprime les flèches sur Chrome, Safari, Edge et Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 legend {
     all: unset; 
     border-radius: 40px;
@@ -136,15 +145,6 @@ legend {
 legend h3 {
     color: currentColor;
 }
-
-/* Supprime les flèches sur Chrome, Safari, Edge et Opera */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-
 
 
 @media all and (max-width: 500px) {
