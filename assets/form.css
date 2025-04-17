@@ -124,12 +124,13 @@ fieldset {
 
 legend {
     border-radius: 40px;
-    background-color: var(--first-color);
+    background-color: var(--first-color) !important;
     color: var(--white);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 3px 10px;
+    width: fit-content;
 }
 
 h3 {
