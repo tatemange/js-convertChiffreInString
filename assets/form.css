@@ -121,20 +121,20 @@ fieldset {
     background: var(--second-bg);
 }
 
-
 legend {
+    all: unset; 
     border-radius: 40px;
-    background-color: var(--first-color) !important;
+    background-color: var(--first-color);
     color: var(--white);
-    display: flex;
+    display: inline-flex;
     justify-content: flex-start;
     align-items: center;
     padding: 3px 10px;
     width: fit-content;
 }
 
-h3 {
-    color: currentColor !important;
+legend h3 {
+    color: currentColor;
 }
 
 /* Supprime les flèches sur Chrome, Safari, Edge et Opera */
