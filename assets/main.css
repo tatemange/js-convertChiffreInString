@@ -1,24 +1,9 @@
 
 
-*, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-input, button, textarea {
-    outline: none;
-    font-size: 88%;
-}
-
-
-* {
-    color: currentColor;
-    font-family: "SF Pro Text" , "Inter", system-ui, sans-serif;
-}
-
-
 :root {
+    color: currentColor;
+    font-family: "SF Pro Text", "Inter", system-ui, sans-serif;
+    font-size: var(--label-size-default);
     --white: #fff;
     --black: #000;
     --first-color: #1856ff;
@@ -26,6 +11,7 @@ input, button, textarea {
 
 
     --border-color: #d9d9d9;
+    --border-color-f: #b9b9b9;
     --border: 1px solid var(--border-color);
     
     --shadow-m: 0 0 5px #0003;
@@ -34,26 +20,28 @@ input, button, textarea {
     --shadow-xxxl: 0 0 20px 10px #0003;
     
     --label-size-default: 16px;
-    --label-size-m: 12px;
-    --label-size-xl: 16px;
-    --label-size-xxl: 24px;
-    --label-size-xxxl: 32px;
 
 
     --label: #000000;
     --secondaryLabel: #8a8a8e;
-    --tertiaryLabel: #c4c4c6;
-    --quaternaryLabel: #dcdcdd;
     --color: #4d4d4d;
-    --red: #ff453a;
-    --green: #30d158;
-    --yellow: #ffd60a;
     --t: 300ms;
     --height-input: calc(8px * 5.5);
-
     --second-bg: #211f20;
 }
 
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+input, button, textarea {
+    outline: none;
+    font-size: 88%;
+}
 
 .primary-bg {
     background: var(--first-color);
@@ -66,12 +54,6 @@ input, button, textarea {
 }
 
 
-body {
-    font-size: var(--label-size-default);
-    color: var(--color);
-}
-
-
 h1, h2, h3, h4, h5, h6 {
     color: var(--label);
     text-transform: uppercase;
@@ -81,8 +63,6 @@ h1, h2, h3, h4, h5, h6 {
 .note, .message {
     font-size: 90%;
     margin-bottom: 10px;
-    background: #0001;
-    border: 1px dashed #0005;
     padding: 5px;
     border-radius: 5px;
 }
@@ -92,9 +72,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: var(--color);
+    padding: 1rem;
 }
 
 
 .note {
-    min-height: 100px;
+    color: black;
+}
+
+.note1 {
+    font-size: 80%;
 }

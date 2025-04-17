@@ -1,3 +1,5 @@
+
+
 const unite = ["", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf"];
 const dizaine = ["", "dix", "vingt", "trente", "quarante", "cinquante", "soixante", "soixante-dix", "quatre-vingt", "quatre-vingt-dix"];
 const exception = { 11: "onze", 12: "douze", 13: "treize", 14: "quatorze", 15: "quinze", 16: "seize" };
@@ -94,3 +96,4 @@ form.addEventListener("submit", (e) => {
     else result.textContent = "[Erreur] verifier votre nombre"
     e.preventDefault()
 })
+
