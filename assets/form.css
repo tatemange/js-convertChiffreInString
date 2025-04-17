@@ -123,9 +123,18 @@ fieldset {
 }
 
 
+legend {
+    border-radius: 40px;
+    background-color: var(--first-color);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 10px;
+}
+
 h3 {
-    font-size: 1.4em;
-    margin-bottom: 10px;
+    color: currentColor !important;
 }
 
 /* Supprime les flèches sur Chrome, Safari, Edge et Opera */
@@ -146,10 +155,18 @@ input[type="number"]::-webkit-outer-spin-button {
         height: 100%;
         box-shadow: none;
         padding: 0rem;
+        padding-top: 60px;
     }
 
     h3 {
-        font-size: max(1.2em, 8vw);
+        font-size: clamp(1.2em, 8vw, 1.5em);
+    }
+
+    legend {
+        transform: translateY(30px);
+        background-color: transparent;
+        background-color: var(--first-color-t);
+        color: var(--label);
     }
 
     form {

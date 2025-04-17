@@ -88,3 +88,20 @@ body {
     border-left: 4px solid var(--second-bg);
     margin-bottom: 10px;
 }
+
+
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.result .txt {
+    font-size: .92em;
+    opacity: 0.6;
+}
+
+.result .txt span {
+    font-size: 1em;
+    font-weight: bold;
+}

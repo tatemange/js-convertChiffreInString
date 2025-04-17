@@ -91,10 +91,15 @@ ip.focus()
 let result = document.querySelector(".note")
 
 form.addEventListener("submit", (e) => {
-    if (lire(parseInt(ip.value)) !== -1) {
-        result.textContent = lire(parseInt(ip.value))
-    }
-    else result.textContent = "[Erreur] verifier votre nombre"
     e.preventDefault()
+    if (lire(parseInt(ip.value)) !== -1) {
+        result.innerHTML = 
+        `<div class="result">
+            <span class='txt'>The result is:</span>
+            <span class='small'>${lire(parseInt(ip.value))}.</span>
+        </div>
+        `
+    }
+    else result.textContent = "Verifier votre nombre."
 })
 
