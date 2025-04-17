@@ -6,7 +6,8 @@
     font-size: var(--label-size-default);
     --white: #fff;
     --black: #000;
-    --first-color: #1856ff;
+    --first-color: #0040dd;
+    --first-color-t: #0040dd66;
     --light-color: #e5e5e5;
 
 
@@ -73,14 +74,17 @@ body {
     align-items: center;
     height: 100vh;
     color: var(--color);
-    padding: 1rem;
 }
 
 
 .note {
     color: black;
+    min-height: 30px;
 }
 
 .note1 {
     font-size: 80%;
+    padding: 0 5px;
+    border-left: 4px solid var(--second-bg);
+    margin-bottom: 10px;
 }

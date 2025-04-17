@@ -87,6 +87,7 @@ function lire(nbr) {
 
 const form = document.querySelector("form")
 let ip = document.querySelector("#ip")
+ip.focus()
 let result = document.querySelector(".note")
 
 form.addEventListener("submit", (e) => {

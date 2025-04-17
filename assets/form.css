@@ -3,7 +3,7 @@ fieldset {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 20px;
+    padding: 1rem;
     border-radius: 20px;
     border: var(--border);
     box-shadow: var(--shadow-xxxl), inset var(--shadow-xl);
@@ -78,6 +78,10 @@ fieldset {
 }
 
 .sp {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
     height: 4px;
     background: transparent;
     width: 0;
@@ -90,11 +94,16 @@ fieldset {
     z-index: 100;
 }
 
-
+.flex {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 
 
 .submit {
-    height: 30px;
+    height: var(--height-input);
+    padding: 0 10px;
     border-radius: 4px;
     color: var(--white);
     background: var(--first-color);
@@ -102,9 +111,11 @@ fieldset {
     transition: var(--t);
     cursor: pointer;
     font-weight: bold;
-    -moz-appearance: textfield;
-    appearance: textfield;
+}
 
+.submit:active {
+    box-shadow: 0 0 0 3px var(--first-color-t);
+    color: var(--white);
 }
 
 .submit:active {
@@ -128,24 +139,17 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 @media all and (max-width: 500px) {
-    body {
-        background: linear-gradient(
-            to bottom,
-            #e0e0e0 0%,
-            #efefef 100%
-        );
-    }
     fieldset {
-        padding: 2em;
         border-radius: 0px;
         width: 100%;
         border: none;
+        height: 100%;
         box-shadow: none;
-        gap: 15px;
+        padding: 0rem;
     }
 
     h3 {
-        font-size: max(1.1em, 7vw);
+        font-size: max(1.2em, 8vw);
     }
 
     form {
@@ -153,6 +157,7 @@ input[type="number"]::-webkit-outer-spin-button {
         justify-content: center;
         align-items: center;
         width: 100%;
+        padding: .8rem;
         height: 100%;
         border: none;
     }
