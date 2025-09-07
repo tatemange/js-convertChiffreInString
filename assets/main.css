@@ -2,8 +2,6 @@
 
 :root {
     color: currentColor;
-    font-family: "SF Pro Text", "Inter", system-ui, sans-serif;
-    font-size: var(--label-size-default);
     --white: #fff;
     --black: #000;
     --first-color: #0040dd;
@@ -11,7 +9,7 @@
     --light-color: #e5e5e5;
 
 
-    --border-color: #d9d9d9;
+    --border-color: rgba(0, 0, 0, .15);
     --border-color-f: #b9b9b9;
     --border: 1px solid var(--border-color);
     
@@ -26,8 +24,8 @@
     --label: #000000;
     --secondaryLabel: #8a8a8e;
     --color: #4d4d4d;
-    --t: 300ms;
-    --height-input: calc(8px * 5.5);
+    --t: 200ms;
+    --height-input: calc(8px * 6);
     --second-bg: #211f20;
 }
 
@@ -36,12 +34,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "SF Pro Display", "Inter", system-ui, sans-serif;
 }
 
+body {
+    font-size: var(--label-size-default);
+}
 
 input, button, textarea {
     outline: none;
-    font-size: 88%;
 }
 
 .primary-bg {
@@ -62,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .note, .message {
-    font-size: 90%;
+    font-size: 95%;
     margin-bottom: 10px;
     padding: 5px;
     border-radius: 5px;
@@ -83,7 +84,7 @@ body {
 }
 
 .note1 {
-    font-size: 80%;
+    font-size: 85%;
     padding: 0 5px;
     border-left: 4px solid var(--second-bg);
     margin-bottom: 10px;
@@ -97,11 +98,12 @@ body {
 }
 
 .result .txt {
-    font-size: .92em;
+    font-size: .95em;
     opacity: 0.6;
 }
 
 .result .txt span {
     font-size: 1em;
+    color: var(--first-color);
     font-weight: bold;
 }

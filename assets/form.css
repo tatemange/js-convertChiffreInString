@@ -5,8 +5,7 @@ fieldset {
     gap: 15px;
     padding: 1rem;
     border-radius: 20px;
-    border: var(--border);
-    box-shadow: var(--shadow-xxxl), inset var(--shadow-xl);
+    border: none;
 }
 
 .item_form {
@@ -18,7 +17,7 @@ fieldset {
     width: 100%;
     overflow: hidden;
     margin-bottom: 2px;
-    border-radius: 6px;
+    border-radius: 50px;
     background: var(--white);
     transition: var(--t);
 }
@@ -45,19 +44,20 @@ fieldset {
 
 .item_form label {
     position: absolute;
-    left: 8px;
+    left: 1rem;
     top: 50%;
     transform: translateY(-50%);
     text-transform: capitalize;
     transition: var(--t);
     pointer-events: none;
+    font-size: .87em;
 }
 
 .item_form input {
     border: none;
     height: var(--height-input);
     width: 100%;
-    padding: 18px 8px 0;
+    padding: 18px 1rem 0;
     color: var(--label);
     background: transparent;
     -moz-appearance: textfield;
@@ -66,9 +66,8 @@ fieldset {
 
 .item_form input:focus + label,
 .item_form input:not(:placeholder-shown) + label {
-    top: 5px;
-    transform: translateY(-10%);
-    opacity: 0.7;
+    top: 15px;
+    opacity: 0.85;
     font-size: .85rem;
 }
 
@@ -97,29 +96,26 @@ fieldset {
 .flex {
     display: flex;
     gap: 10px;
-    align-items: center;
+    flex-direction: column;
 }
 
 .submit {
     height: var(--height-input);
     padding: 0 10px;
-    border-radius: 4px;
+    border-radius: 50px;
     color: var(--white);
-    background: var(--first-color);
+    background: black;
     border: none;
     transition: var(--t);
     cursor: pointer;
+    height: 36px;
     font-weight: bold;
 }
 
 .submit:active {
-    box-shadow: 0 0 0 3px var(--first-color-t);
-    color: var(--white);
+    background: #555;
 }
 
-.submit:active {
-    background: var(--second-bg);
-}
 
 
 
