@@ -82,7 +82,7 @@ cent vingt-trois millions quatre cent cinquante-six mille sept cent quatre-vingt
 
 ## 👨‍💻 Auteur
 
-Projet développé par **\[Ton Nom]**.
+Projet développé par **\[TATEM ANGE ULRICH]**.
 N’hésitez pas à contribuer via des **issues** ou **pull requests** !
 
 ---
