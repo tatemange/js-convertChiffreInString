@@ -66,7 +66,7 @@ function lire(nbr) {
 
     if(nbr < BigInt(0)) {
         let newNbr = BigInt(nbr.toString().replace("-", ""))
-        return "moin " + lire(newNbr)
+        return "moins " + lire(newNbr)
     }
 
     if(nbr === BigInt(0))
