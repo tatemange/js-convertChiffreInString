@@ -9,7 +9,7 @@
     --light-color: #e5e5e5;
 
 
-    --border-color: rgba(0, 0, 0, .15);
+    --border-color: rgba(0, 0, 0, .2);
     --border-color-f: #b9b9b9;
     --border: 1px solid var(--border-color);
     
@@ -26,7 +26,7 @@
     --color: #4d4d4d;
     --t: 200ms;
     --height-input: calc(8px * 6);
-    --second-bg: #211f20;
+    --second-bg: #111;
 }
 
 
@@ -58,7 +58,6 @@ input, button, textarea {
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--label);
-    text-transform: uppercase;
 }
 
 
@@ -73,7 +72,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     color: var(--color);
 }
 
@@ -86,7 +85,7 @@ body {
 .note1 {
     font-size: 85%;
     padding: 0 5px;
-    border-left: 4px solid var(--second-bg);
+    text-align: center;
     margin-bottom: 10px;
 }
 
